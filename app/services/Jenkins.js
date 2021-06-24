@@ -174,7 +174,7 @@ module.exports = function () {
                 reason: "Build",
                 hasErrors: false,
                 hasWarnings: res.result == 'UNSTABLE',
-                url: res.url
+                url: res.url.replace(/\/[0-9]+\/$/, "/")
             };
         };
 

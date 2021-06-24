@@ -27,6 +27,7 @@ __Here's a demo:__ [http://builds.mspi.es](http://builds.mspi.es) <sub><sup>([ot
 - [Bamboo](https://www.atlassian.com/software/bamboo) <sub><sup>([Configuration](#bamboo))</sup></sub>
 - [BambooDeploy](https://www.atlassian.com/software/bamboo) <sub><sup>([Configuration](#bamboodeploy))</sup></sub>
 - [Bitbucket Pipelines](https://bitbucket.org/product/features/pipelines) <sub><sup>([Configuration](#bitbucket-pipelines))</sup></sub>
+- [Bitbucket Deployments](https://bitbucket.org/product/features/pipelines) <sub><sup>([Configuration](#bitbucket-Deployments))</sup></sub>
 - [Buildkite](https://buildkite.com/) <sub><sup>([Configuration](#buildkite))</sup></sub>
 - [Bitrise](https://bitrise.io) <sub><sup>([Configuration](#bitrise))</sup></sub>
 - [CCTray](https://sourceforge.net/projects/ccnet/) <sub><sup>([Configuration](#cctray))</sup></sub>
@@ -464,6 +465,40 @@ that has to be copied to the config.json:
 | `username`       | The account username
 | `slug`           | The name of the project
 | `teamname`       | The team owner of the project. Only use this if the team is the project owner.
+
+#### Bitbucket Deployments
+
+Support for Bitbucket Deployments is adapted from Bitbucket Pipelines.
+
+In order to monitor a Bitbucket pipeline, one has to create an app-password by navigating to
+`https://bitbucket.org/account/user/<username>/app-passwords`
+
+Once "Create app password" has been clicked, one has to ensure that the "read pipelines" box
+has been checked. Once this box has been checked, click "create" and an AppPassword will be returned
+that has to be copied to the config.json:
+
+```json
+{
+  "name": "BitbucketDeployments",
+  "configuration": {
+    "apiKey": "key",
+    "username": "username",
+    "slug": "slug",
+    "teamname": "teamname",
+    "envUUID" : "envUUID",
+    "envName" : "envName"
+  }
+}
+```
+
+| Setting          | Description
+|------------------|------------------------------------
+| `apiKey`         | The API key on the Bitbucket settings
+| `username`       | The account username
+| `slug`           | The name of the project
+| `teamname`       | The team owner of the project. Only use this if the team is the project owner.
+| `envUUID`        | UUID of the environment
+| `envname`        | Environemnt name (this will show up on the screen)
 
 #### Buildkite
 

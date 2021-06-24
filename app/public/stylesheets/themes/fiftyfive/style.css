@@ -1,0 +1,180 @@
+.fiftyfive-theme .clear {
+  clear: both;
+}
+
+.fiftyfive-theme .nowrap {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.fiftyfive-theme .box {
+  border: 1px solid black;
+}
+
+.fiftyfive-theme .middle {
+  vertical-align: middle;
+}
+
+.fiftyfive-theme .medium-height {
+    line-height: 30px;
+    height: 30px;
+}
+
+.fiftyfive-theme .reset-height {
+    display: inline-block;
+    line-height: normal;
+}
+
+.fiftyfive-theme .flex-container {
+  padding: 0px;
+  margin: 0 auto 0 auto;
+  height: 100%;
+  width: 100%;
+}
+
+.fiftyfive-theme .flex-item {
+  float: left;
+  width: 20%;
+  color: transparent;
+  position: relative;
+}
+
+.fiftyfive-theme .flex-item-inner {
+  background: transparent;
+  margin: 9px;
+  padding: 5px;
+  box-shadow: 0px 0px 20px 7px rgba(0,0,0,0.8);
+}
+
+.fiftyfive-theme .flex-item .overlay {
+  background-color: transparent;
+  position: absolute;
+  margin: 20px;
+  top: 0px;
+  right: 0px;
+}
+
+.fiftyfive-theme .flex-item .overlay a {
+  float: left;
+  color: white;
+  font-size: 20pt;
+  background-color: black;
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  opacity: 0.8;
+}
+
+.fiftyfive-theme .flex-item .info-block {
+  float: left;
+  font-size: 13pt;
+}
+
+.fiftyfive-theme .flex-item .project {
+  font-weight: bold;
+}
+
+.fiftyfive-theme .flex-item .project-definition-separator {
+  border-left: 1px solid;
+  padding-left: 10px;
+  margin-left: 10px
+}
+
+.fiftyfive-theme .flex-item .definition {
+}
+
+.fiftyfive-theme .flex-item .number {
+  font-size: 15pt;
+}
+
+.fiftyfive-theme .flex-item .duration-block {
+  float: right;
+  font-size: 8pt;
+}
+
+.fiftyfive-theme .flex-item .duration-icon {
+  font-size: 25px;
+  float: left;
+  margin-top: 3px;
+}
+
+.fiftyfive-theme .flex-item .time {
+  margin-left: 10px;
+}
+
+.fiftyfive-theme .flex-item .status {
+  float: left;
+  font-family: 'open_sans_condensedbold';
+  font-weight: bold;
+  font-size: 15pt;
+}
+
+.fiftyfive-theme .flex-item .reason {
+  margin-left: 10px;
+  font-size: 12pt;
+}
+
+.fiftyfive-theme .flex-item .reason-icon {
+  font-size: 20px;
+}
+
+.fiftyfive-theme .flex-item .reason-block {
+  float: right;
+}
+
+.fiftyfive-theme .flex-item .for {
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+.fiftyfive-theme .requestedFor-block {
+  font-size: 15pt;
+  float: left;
+  vertical-align: middle;
+}
+
+.fiftyfive-theme .flex-item .warnings {
+  font-weight: bold;
+  font-size: 15pt;
+  float: right;
+  vertical-align: middle;
+}
+
+@media (max-height: 550px) {
+  .fiftyfive-theme .prio-vertical-one {
+    display: none;
+  }
+}
+
+@media (max-height: 710px) {
+  .fiftyfive-theme .prio-vertical-two {
+    display: none;
+  }
+}
+
+@media (max-height: 850px) {
+  .fiftyfive-theme .prio-vertical-three {
+    display: none;
+  }
+}
+
+@media (max-width: 820px) {
+  .fiftyfive-theme .prio-horizontal-one {
+    display: none;
+  }
+}
+
+@media (max-width: 950px) {
+  .fiftyfive-theme .prio-horizontal-two {
+    display: none;
+  }
+}
+
+@media (max-width: 1250px) {
+  .fiftyfive-theme .prio-horizontal-three {
+    display: none;
+  }
+}
